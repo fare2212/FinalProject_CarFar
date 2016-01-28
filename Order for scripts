@@ -1,0 +1,7 @@
+In order to get the result, the scripts have to be run in this order:
+
+1. fun.py
+2. download.py
+3. calcuNDVI.py
+4. stackingNDVI.py
+5. fild_NDVI.py (this wasn't finished due to an error in transform tuple which gave us 0 in the zonal statistics)
