@@ -1,0 +1,41 @@
+Project: "Crop mapping using temporal dynamics in California"
+
+**Objectives**
+1. Calculate NDVI during a year (2015) for a specific area in California
+2. Calculate annual phenology model for different crop fields using RapidEye images
+
+**Data and Tools used**
+1. Planet Labs images – Rapid Eye 
+  * 5 X 5
+  * 16-bit GeoTIFF 
+  * Without cloud cover
+  * From 01/01/2015 till 25/01/2016
+2. Crop fields shapefile (20, manually)
+3. Program language: Python, Visualization software: QGIS
+4. API Planet Labs (documentation)
+
+**Libraries**
+Os
+Rasterio
+GeoPandas
+GDAL
+Numpy
+Matplotlib
+Glob
+Geojson
+
+**Structure**
+1. We downloaded rapideye images from planet labs  for  our study area( Sacramento, California)
+2. Calculate NDVI for selected images (almost one per month)
+3. Stack NDVI images (1 band per month – total 9 bands)
+4. Create crop fields shapefile (QGIS)
+5. Calculate NDVI on each field for a year using Zonal Statistics (we are still working on this)
+6. Plot the values of NDVI against time in order to have a phenology model (not finished yet)
+7. Identify maximum and minimum values with the corresponding dates and the amplitude of the curves (not finished yet)
+
+**Difilculties**
+API and metadata from Planet Labs
+Different libraries – arguments - versions
+Zonal Statistics – 0 and NoData as stats
+Geopanda library is still new
+
