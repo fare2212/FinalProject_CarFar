@@ -15,7 +15,7 @@ os.chdir("/home/user/git/GeoScripting/data")
 
 #URL and API key from Planet Labs
 url = "https://api.planet.com/v0/scenes/rapideye/"
-key = "b932418b7f3b4b6ea86ea5408192865b"
+key = "b10018b7f3b4b6ea86ea54081246785b"
 
 #longitude, latitude of the selected area
 sf_nw = (-122.11, 39.56)
